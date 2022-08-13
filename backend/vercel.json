@@ -9,8 +9,10 @@
   "routes": [
     {
       "src": "/(.*)",
-      "methods": ["GET, POST"],
       "dest": "/"
+    },
+    {
+      "src": "/api/upload"
     }
   ]
 }
