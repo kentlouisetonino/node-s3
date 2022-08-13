@@ -1,7 +1,7 @@
 import UploadController from '../controllers/uploadController'
 import Router from '../lib/router'
-import Upload from '../lib/upload'
+import MulterUploadFile from '../lib/multerUploadFile'
 
-Router.post('/', Upload.single('file'), UploadController)
+Router.post('/', MulterUploadFile.single('file'), UploadController)
 
 export default Router
