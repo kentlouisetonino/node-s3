@@ -13,9 +13,6 @@ permissions:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
-    defaults:
-      run:
-        working-directory: backend
     strategy:
       matrix:
         os: [ubuntu-18.04]
@@ -41,9 +38,6 @@ jobs:
 
   clean:
     runs-on: ${{ matrix.os }}
-    defaults:
-      run:
-        working-directory: backend
     needs: build
     strategy:
       matrix:
