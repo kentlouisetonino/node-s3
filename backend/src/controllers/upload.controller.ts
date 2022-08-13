@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-import S3UploadFile from '../lib/s3UploadFile'
+import S3UploadFile from '../lib/s3-upload-file.lib'
 
 const UploadController = async (req: Request, res: Response) => {
   const bucketName = req.body.bucketName
