@@ -1,13 +1,18 @@
 require('dotenv').config()
-const express = require('express')
-const app = express()
+import express, { Request, Response } from 'express'
 
-const PORT = process.env.PORT
+import App from './lib/app'
+import UploadRoute from './routes/uploadRoute'
+import Environment from './lib/environment'
 
-app.get('/', (req: any, res: any) => {
-  res.send('hello')
+App.get('/', (req: Request, res: Response) => {
+  res.send('Backend server is online.')
 })
 
-app.listen(PORT, () => {
-  console.log(`Server is running in port ${PORT}`)
+App.listen(Environment.PORT, () => {
+  console.log(`Server is running in port ${Environment.PORT}`)
 })
+
+App.use(express.json())
+App.use(express.urlencoded({ extended: true }))
+App.use('/api/upload', UploadRoute)
