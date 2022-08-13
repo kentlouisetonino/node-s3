@@ -1,21 +1,27 @@
 import { Request, Response } from 'express'
 
-import UnlinkFile from '../lib/unlinkFile'
+import S3UploadFile from '../lib/s3UploadFile'
 
 const UploadController = async (req: Request, res: Response) => {
   const bucketName = req.body.bucketName
   const bucketRegion = req.body.bucketRegion
-  const bucketKeyId = req.body.bucketKeyId
+  const bucketAccessKeyId = req.body.bucketAccessKeyId
   const bucketSecretAccessKey = req.body.bucketSecretAccessKey
   const file: any = req.file
-  await UnlinkFile(file.path)
 
-  res.send({
+  const aws = await S3UploadFile({
     bucketName: bucketName,
     bucketRegion: bucketRegion,
-    bucketKeyId: bucketKeyId,
+    bucketAccessKeyId: bucketAccessKeyId,
     bucketSecretAccessKey: bucketSecretAccessKey,
-    file: file,
+    fileBuffer: file.buffer,
+    fileEncoding: file.encoding,
+    fileName: file.originalname,
+    fileContentType: file.mimetype!,
+  })
+
+  res.send({
+    file: aws,
   })
 }
 
