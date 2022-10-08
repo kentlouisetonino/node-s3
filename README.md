@@ -1,6 +1,6 @@
 ### Description
-- An API for handling CRUD operations of AWS S3 objects.
+- A Web Application that will allow you to test your AWS S3 Bucket connection and do some CRUD operations.
 
 ### Technologies | Packages
 - Backend: Rest API, AWS-SDK, Multer, ExpressJS, TypesScript, NodeJS
-- Others: Github Actions, Heroku
+- Others: Github Actions
