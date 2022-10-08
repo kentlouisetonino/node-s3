@@ -1,7 +1,7 @@
 {
-  "name": "aws-s3-tester-app-backend",
+  "name": "aws-s3-tester-backend",
   "version": "1.0.0",
-  "description": "",
+  "author": "Kent Louise G. Tonino",
   "main": "./dist/index.js",
   "engines": {
     "node": "14.x"
@@ -12,8 +12,6 @@
     "dev": "nodemon --config nodemon.json ./src/index.ts",
     "format": "prettier --write \"src/**/*.ts\""
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/aws-sdk": "^2.7.0",
