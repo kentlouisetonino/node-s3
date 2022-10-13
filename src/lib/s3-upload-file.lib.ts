@@ -11,6 +11,10 @@ type Params = {
   fileContentType: string
 }
 
+/**
+ * A function that will allow you to upload a file in your
+ * S3 bucket.
+ */
 const S3UploadFile = ({
   bucketName,
   bucketRegion,
