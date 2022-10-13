@@ -2,7 +2,7 @@ require('dotenv').config()
 import express, { Request, Response } from 'express'
 
 import App from './lib/app.lib'
-import UploadRoute from './routes/upload.route'
+import S3Route from './routes/s3.route'
 import Environment from './lib/environment.lib'
 
 App.get('/', (req: Request, res: Response) => {
@@ -15,4 +15,4 @@ App.listen(Environment.PORT, () => {
 
 App.use(express.json())
 App.use(express.urlencoded({ extended: true }))
-App.use('/api/upload', UploadRoute)
+App.use('/api/s3', S3Route)
