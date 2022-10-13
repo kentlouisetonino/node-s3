@@ -1,6 +1,7 @@
 import { Request, Response } from 'express'
 
-import S3UploadFile from '../lib/s3-upload-file.lib'
+import s3UploadFile from '../lib/s3-upload-file.lib'
+import s3GetSignedURL from '../lib/s3-get-signed-url.lib'
 
 export const S3UploadController = async (req: Request, res: Response) => {
   const bucketName = req.body.bucketName
@@ -31,7 +32,7 @@ export const S3UploadController = async (req: Request, res: Response) => {
     })
   } else {
     try {
-      const s3Object = await S3UploadFile({
+      const s3Object = await s3UploadFile({
         bucketName: bucketName,
         bucketRegion: bucketRegion,
         bucketAccessKeyId: bucketAccessKeyId,
@@ -42,9 +43,17 @@ export const S3UploadController = async (req: Request, res: Response) => {
         fileContentType: file.mimetype!,
       })
 
+      const s3ObjectURL = await s3GetSignedURL({
+        bucketName: bucketName,
+        bucketRegion: bucketRegion,
+        bucketAccessKeyId: bucketAccessKeyId,
+        bucketSecretAccessKey: bucketSecretAccessKey,
+        key: s3Object.Key,
+      })
+
       res.send({
         key: s3Object.Key,
-        url: 'test',
+        url: s3ObjectURL,
       })
     } catch (error) {
       res.send({
