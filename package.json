@@ -1,7 +1,7 @@
 {
   "name": "aws-s3-tester-backend",
   "version": "1.0.0",
-  "author": "Kent Louise G. Tonino",
+  "author": "Kent Louise Tonino",
   "main": "./dist/index.js",
   "engines": {
     "node": "14.x"
