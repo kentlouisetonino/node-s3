@@ -8,6 +8,10 @@ type Params = {
   key: string
 }
 
+/**
+ * This function will get the signed URL from S3
+ * in order to be viewable in the browser.
+ */
 const s3GetSignedURL = async ({
   bucketName,
   bucketRegion,
