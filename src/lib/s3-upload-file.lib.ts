@@ -15,7 +15,7 @@ type Params = {
  * A function that will allow you to upload a file in your
  * S3 bucket.
  */
-const S3UploadFile = ({
+const s3UploadFile = async ({
   bucketName,
   bucketRegion,
   bucketAccessKeyId,
@@ -43,4 +43,4 @@ const S3UploadFile = ({
   return s3.upload(params).promise()
 }
 
-export default S3UploadFile
+export default s3UploadFile
