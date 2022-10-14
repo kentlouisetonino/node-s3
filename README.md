@@ -3,6 +3,6 @@
 
 <br />
 
-## Technology
+## Technology Stack
 > _**Backend** : Rest API, AWS-SDK, Multer, ExpressJS, TypesScript, NodeJS_ <br />
 > _**Others** : Github Actions_
