@@ -1,18 +1,18 @@
 require('dotenv').config()
-import express, { Request, Response } from 'express'
+import { Request, Response, json, urlencoded } from 'express'
 
-import App from './lib/app.lib'
-import S3Route from './routes/s3.route'
-import Environment from './lib/environment.lib'
+import app from './lib/app'
+import environment from './lib/environment'
+import S3Route from './routes/S3Route'
 
-App.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Backend server is online.')
 })
 
-App.listen(Environment.PORT, () => {
-  console.log(`Server is running in port ${Environment.PORT}`)
+app.listen(environment.PORT, () => {
+  console.log(`Server is running in port ${environment.PORT}`)
 })
 
-App.use(express.json())
-App.use(express.urlencoded({ extended: true }))
-App.use('/api/s3', S3Route)
+app.use(json())
+app.use(urlencoded({ extended: true }))
+app.use('/api/s3', S3Route)

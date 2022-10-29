@@ -1,6 +1,6 @@
 import S3 from 'aws-sdk/clients/s3'
 
-type Params = {
+interface Props {
   bucketName: string
   bucketRegion: string
   bucketAccessKeyId: string
@@ -12,13 +12,13 @@ type Params = {
  * This function will get the signed URL from S3
  * in order to be viewable in the browser.
  */
-const s3GetSignedURL = async ({
+export default async function s3GetSignedURL({
   bucketName,
   bucketRegion,
   bucketAccessKeyId,
   bucketSecretAccessKey,
   key,
-}: Params) => {
+}: Props) {
   const s3 = new S3({
     region: bucketRegion,
     accessKeyId: bucketAccessKeyId,
@@ -31,5 +31,3 @@ const s3GetSignedURL = async ({
     Expires: 60 * 5,
   })
 }
-
-export default s3GetSignedURL
