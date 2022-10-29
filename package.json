@@ -9,7 +9,7 @@
   "scripts": {
     "start": "tsc --build && node ./dist/index.js",
     "dev": "nodemon --config nodemon.json ./src/index.ts",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\" \"./**/*.{json, prettierrc}\""
   },
   "license": "ISC",
   "dependencies": {

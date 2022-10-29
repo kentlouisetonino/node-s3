@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "target": "es2016",
     "module": "commonjs",
     "esModuleInterop": true,
@@ -12,7 +10,5 @@
     "skipLibCheck": true,
     "outDir": "./dist"
   },
-  "include": [
-    "src/**/*.ts"
-  ]
+  "include": ["src/**/*.ts"]
 }
