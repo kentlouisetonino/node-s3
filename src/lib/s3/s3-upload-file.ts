@@ -1,6 +1,6 @@
 import S3 from 'aws-sdk/clients/s3'
 
-type Params = {
+interface Props {
   bucketName: string
   bucketRegion: string
   bucketAccessKeyId: string
@@ -15,7 +15,7 @@ type Params = {
  * A function that will allow you to upload a file in your
  * S3 bucket.
  */
-const s3UploadFile = async ({
+export default async function s3UploadFile({
   bucketName,
   bucketRegion,
   bucketAccessKeyId,
@@ -24,7 +24,7 @@ const s3UploadFile = async ({
   fileEncoding,
   fileName,
   fileContentType,
-}: Params) => {
+}: Props) {
   const s3 = new S3({
     region: bucketRegion,
     accessKeyId: bucketAccessKeyId,
@@ -42,5 +42,3 @@ const s3UploadFile = async ({
 
   return s3.upload(params).promise()
 }
-
-export default s3UploadFile

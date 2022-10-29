@@ -1,8 +1,8 @@
 import { Request, Response } from 'express'
 
-import s3UploadFile from '../lib/s3-upload-file.lib'
-import s3GetSignedURL from '../lib/s3-get-signed-url.lib'
-import s3DeleteFile from '../lib/s3-delete-file.lib'
+import s3DeleteFile from '../lib/s3/s3-delete-file'
+import s3GetSignedURL from '../lib/s3/s3-get-signed-url'
+import s3UploadFile from '../lib/s3/s3-upload-file'
 
 export const S3UploadController = async (req: Request, res: Response) => {
   const bucketName = req.body?.bucketName

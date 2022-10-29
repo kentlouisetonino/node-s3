@@ -1,6 +1,6 @@
 import S3 from 'aws-sdk/clients/s3'
 
-type Params = {
+interface Props {
   bucketName: string
   bucketRegion: string
   bucketAccessKeyId: string
@@ -12,13 +12,13 @@ type Params = {
  * This function will allow you to delete an
  * object in your S3 bucket.
  */
-const s3DeleteFile = async ({
+export default async function s3DeleteFile({
   bucketName,
   bucketRegion,
   bucketAccessKeyId,
   bucketSecretAccessKey,
   key,
-}: Params) => {
+}: Props) {
   const s3 = new S3({
     region: bucketRegion,
     accessKeyId: bucketAccessKeyId,
@@ -33,5 +33,3 @@ const s3DeleteFile = async ({
     })
     .promise()
 }
-
-export default s3DeleteFile
