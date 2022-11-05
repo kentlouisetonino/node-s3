@@ -1,5 +1,5 @@
 ## Description
-> A Web Application that will allow you to test your AWS S3 Bucket connection and do some CRUD operations.
+> A Backend Appliation that will allow you to test your AWS S3 Bucket connection and do some CRUD operations.
 
 <br />
 
