@@ -153,8 +153,6 @@ export const S3DeleteFile = async (req: Request, res: Response) => {
         key: key,
       })
 
-      console.log(test)
-
       res.send({
         statusCode: 200,
         key: key,
