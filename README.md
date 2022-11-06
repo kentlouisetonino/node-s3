@@ -17,3 +17,36 @@
 npm run build
 npm run dev
 ```
+> - Upload a file.
+```bash
+HTTP Method: POST
+URL: http://localhost:11000/api/s3/upload
+Body (form-data):
+    bucketName: string
+    bucketRegion: string
+    bucketAccessKeyId: string
+    bucketSecretAccessKey: string
+    file: File
+```
+> - Delete a file.
+```bash
+HTTP Method: POST
+URL: http://localhost:11000/api/s3/delete
+Body (form-data):
+    bucketName: string
+    bucketRegion: string
+    bucketAccessKeyId: string
+    bucketSecretAccessKey: string
+    key: string
+```
+> - Get the signed URL of the file.
+```bash
+HTTP Method: GET
+URL: http://localhost:11000/api/s3/url
+Params:
+    bucketName: string
+    bucketRegion: string
+    bucketAccessKeyId: string
+    bucketSecretAccessKey: string
+    key: string
+```
