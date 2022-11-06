@@ -1,4 +1,3 @@
-require('dotenv').config()
 import { Request, Response, json, urlencoded } from 'express'
 
 import app from './lib/app'
