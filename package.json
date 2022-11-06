@@ -1,5 +1,5 @@
 {
-  "name": "aws-s3-tester-backend",
+  "name": "aws-s3-tester",
   "version": "1.0.0",
   "author": "Kent Louise Tonino",
   "main": "./dist/index.js",
