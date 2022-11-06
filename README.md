@@ -50,3 +50,8 @@ Params:
     bucketSecretAccessKey: string
     key: string
 ```
+
+<br />
+
+## Recording
+[Test.webm](https://user-images.githubusercontent.com/69438999/200174927-6b3eb8e8-4a04-43dd-bc90-18a4eb8f7750.webm)
