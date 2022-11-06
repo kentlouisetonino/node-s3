@@ -1,4 +1,4 @@
-name: aws-s3-tester-backend (develop)
+name: aws-s3-tester (develop)
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup node env
+      - name: Setup Node ENV
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
