@@ -1,5 +1,5 @@
 ## Description
-> A Server-Side application that will allow you to test your AWS S3 Bucket connection and do some CRUD operations. The following features below are implemented.
+> An application that will allow you to test your AWS S3 Bucket connection and do some CRUD operations. The following features below are implemented.
 > - Upload a file.
 > - Delete a file.
 > - Get the signed URL of the file.
