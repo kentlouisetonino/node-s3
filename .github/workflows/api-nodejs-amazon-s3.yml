@@ -1,4 +1,4 @@
-name: api-nodejs-aws-s3 (develop)
+name: api-nodejs-aws-s3
 
 on:
   push:

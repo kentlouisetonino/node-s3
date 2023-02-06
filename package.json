@@ -1,5 +1,5 @@
 {
-  "name": "api-nodejs-aws-s3",
+  "name": "api-nodejs-amazon-s3",
   "version": "1.0.0",
   "author": "Kent Louise Tonino",
   "main": "./dist/index.js",
