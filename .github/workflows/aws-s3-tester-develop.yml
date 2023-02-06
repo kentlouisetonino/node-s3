@@ -1,4 +1,4 @@
-name: aws-s3-tester (develop)
+name: api-nodejs-aws-s3 (develop)
 
 on:
   push:
