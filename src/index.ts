@@ -4,20 +4,21 @@ import app from './lib/app'
 import environment from './lib/environment'
 import S3Route from './routes/S3Route'
 
-// request logger
-app.use(morgan('tiny'))
-
-// make the static files available publicly
-app.use(express.static('public'))
-
-app.get('/', (_: Request, res: Response) => {
-  res.sendFile('index.html', { root: 'public' })
-})
-
+// server listener
 app.listen(environment.PORT, () => {
   console.log(`Server is running in http://localhost:${environment.PORT}`)
 })
 
+// root route
+app.get('/', (_: Request, res: Response) => {
+  res.sendFile('index.html', { root: 'public' })
+})
+
+// middleware
+app.use(morgan('tiny'))
+app.use(express.static('public'))
 app.use(json())
 app.use(urlencoded({ extended: true }))
+
+// amazon s3 endpoints
 app.use('/api/s3', S3Route)
