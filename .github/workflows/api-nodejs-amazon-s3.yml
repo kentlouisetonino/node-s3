@@ -48,11 +48,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
-      - name: Install Dependencies
-        run: |
-          yarn install --frozen-lockfile
+      - name: Setupt Node ENV
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
       - name: Run Prettier
         run: |
+          yarn install --frozen-lockfile
           yarn run format
       - name: Save Changes
         run: |
