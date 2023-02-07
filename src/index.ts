@@ -4,10 +4,13 @@ import app from './lib/app'
 import environment from './lib/environment'
 import S3Route from './routes/S3Route'
 
+// request logger
 app.use(morgan('tiny'))
+
+// make the static files available publicly
 app.use(express.static('public'))
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (_: Request, res: Response) => {
   res.sendFile('index.html', { root: 'public' })
 })
 
