@@ -1,6 +1,6 @@
 ## Description
 
-> A server-side application that will allow you to test your Amazon S3 Bucket connection and do some CRUD operations. The following features below are implemented.
+> A server-side application that will allow you to test your Amazon S3 Bucket with NodeJS and do some CRUD operations. The following features below are implemented.
 >
 > - Upload a file.
 > - Delete a file.
