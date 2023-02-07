@@ -9,16 +9,16 @@ app.listen(environment.PORT, () => {
   console.log(`Server is running in http://localhost:${environment.PORT}`)
 })
 
-// root route
-app.get('/', (_: Request, res: Response) => {
-  res.sendFile('index.html', { root: 'public' })
-})
-
 // middleware
 app.use(morgan('tiny'))
 app.use(express.static('public'))
 app.use(json())
 app.use(urlencoded({ extended: true }))
+
+// root route
+app.get('/', (_: Request, res: Response) => {
+  res.sendFile('index.html', { root: 'public' })
+})
 
 // amazon s3 endpoints
 app.use('/api/s3', S3Route)
