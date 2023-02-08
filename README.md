@@ -61,5 +61,3 @@ Params:
 ```
 
 <br />
-
-## Recording
