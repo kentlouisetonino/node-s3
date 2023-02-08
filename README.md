@@ -1,6 +1,6 @@
 ## Description
 
-> A simple server-side application that will allow you to test your Amazon S3 Bucket with NodeJS and do some CRUD operations. The following features below are implemented are: `upload a file`, `delete a file`, and `get the signed URL of the file`. Feel free to clone and tinker. 🍻🤘
+> A simple server-side application that will allow you to test your Amazon S3 Bucket with NodeJS and do some CRUD operations. The following features below are implemented are: `upload a file`, `delete a file`, and `get the signed URL of the file`. Feel free to clone and tinker. 🤘🍻
 
 > Amazon S3: https://aws.amazon.com/s3/
 
