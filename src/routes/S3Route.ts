@@ -1,13 +1,13 @@
-import MulterUploadFile from '../lib/multer-upload-file'
-import router from '../lib/router'
 import {
   S3DeleteFile,
   S3GetSignedURL,
-  S3UploadController,
+  S3Upload,
 } from '../controllers/S3Controller'
+import multerInstance from '../lib/multer-instance'
+import router from '../lib/router'
 
-router.post('/upload', MulterUploadFile.single('file'), S3UploadController)
 router.get('/url', S3GetSignedURL)
-router.post('/delete', S3DeleteFile)
+router.post('/upload', multerInstance.single('file'), S3Upload)
+router.post('/delete', multerInstance.fields([]), S3DeleteFile)
 
 export default router

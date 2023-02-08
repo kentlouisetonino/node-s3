@@ -20,5 +20,5 @@ app.get('/', (_: Request, res: Response) => {
   res.sendFile('index.html', { root: 'public' })
 })
 
-// amazon s3 endpoints
+// amazon s3 routes
 app.use('/api/s3', S3Route)
