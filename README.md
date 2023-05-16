@@ -1,11 +1,15 @@
 ## Description
 
-> A server-side application that will allow you to test your Amazon S3 Bucket with NodeJS and do some CRUD operations. The following features below are implemented are: `upload a file`, `delete a file`, and `get the signed URL of the file`.
+> - A backend application that allows to test your AWS S3 bucket with NodeJS.
+> - The following features below are implemented are: `upload a file`, `delete a file`, and `get the signed URL of the file`.
 
 > Amazon S3: https://aws.amazon.com/s3/
 
 <br />
 <br />
+<br />
+
+
 
 ## Setup
 
@@ -57,10 +61,12 @@ Params:
 
 <br />
 <br />
+<br />
+
+
 
 ## Recording
 
 
 https://user-images.githubusercontent.com/69438999/217460437-453a250e-9770-42de-8eb6-0f015c378e65.mp4
-
 
