@@ -2,14 +2,14 @@
   "name": "backend-nodejs-s3",
   "version": "1.0.0",
   "author": "Kent Louise Tonino",
-  "main": "./dist/index.js",
+  "main": "./dist/server.js",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
     "build": "tsc --build",
-    "start": "tsc --build && node ./dist/index.js",
-    "dev": "nodemon --config nodemon.json ./src/index.ts",
+    "start": "tsc --build && node ./dist/server.js",
+    "dev": "nodemon --config nodemon.json ./src/server.ts",
     "format": "prettier --write \"src/**/*.ts\" \"./**/*.{json, prettierrc}\""
   },
   "license": "ISC",
