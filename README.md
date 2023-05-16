@@ -2,8 +2,8 @@
 
 > - A backend application that allows to test your AWS S3 bucket with NodeJS.
 > - The following features below are implemented are: `upload a file`, `delete a file`, and `get the signed URL of the file`.
-
-> Amazon S3: https://aws.amazon.com/s3/
+> - Amazon S3: https://aws.amazon.com/s3/
+> - SDK V3: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating-to-v3.html
 
 <br />
 <br />
