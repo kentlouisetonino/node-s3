@@ -4,21 +4,21 @@ import app from './lib/app'
 import environment from './lib/environment'
 import S3Route from './routes/S3Route'
 
-// server listener
+// * server listener
 app.listen(environment.PORT, () => {
   console.log(`Server is running in http://localhost:${environment.PORT}`)
 })
 
-// middleware
+// * middlewares
 app.use(morgan('tiny'))
 app.use(express.static('public'))
 app.use(json())
 app.use(urlencoded({ extended: true }))
 
-// root route
+// * root endpoint
 app.get('/', (_: Request, res: Response) => {
   res.sendFile('index.html', { root: 'public' })
 })
 
-// amazon s3 routes
+// * s3 endpoints
 app.use('/api/s3', S3Route)
