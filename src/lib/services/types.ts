@@ -16,3 +16,11 @@ export interface S3DeleteFileProps {
   bucketSecretAccessKey: string;
   key: string;
 }
+
+export interface S3GetSignedURLProps {
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  key: string;
+}

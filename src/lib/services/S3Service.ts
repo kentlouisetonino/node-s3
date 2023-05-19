@@ -1,5 +1,9 @@
 import S3 from 'aws-sdk/clients/s3';
-import { S3DeleteFileProps, S3UploadFileProps } from './types';
+import {
+  S3DeleteFileProps,
+  S3GetSignedURLProps,
+  S3UploadFileProps,
+} from './types';
 
 export default class S3Service {
   static uploadFile({
@@ -50,5 +54,25 @@ export default class S3Service {
         Key: key,
       })
       .promise();
+  }
+
+  static getSignedURL({
+    bucketName,
+    bucketRegion,
+    bucketAccessKeyId,
+    bucketSecretAccessKey,
+    key,
+  }: S3GetSignedURLProps) {
+    const s3 = new S3({
+      region: bucketRegion,
+      accessKeyId: bucketAccessKeyId,
+      secretAccessKey: bucketSecretAccessKey,
+    });
+
+    return s3.getSignedUrl('getObject', {
+      Bucket: bucketName,
+      Key: key,
+      Expires: 60 * 5,
+    });
   }
 }
