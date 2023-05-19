@@ -1,5 +1,5 @@
 import S3 from 'aws-sdk/clients/s3';
-import { S3UploadFileProps } from './types';
+import { S3DeleteFileProps, S3UploadFileProps } from './types';
 
 export default class S3Service {
   static uploadFile({
@@ -28,5 +28,27 @@ export default class S3Service {
     };
 
     return s3.upload(params).promise();
+  }
+
+  static deleteFile({
+    bucketName,
+    bucketRegion,
+    bucketAccessKeyId,
+    bucketSecretAccessKey,
+    key,
+  }: S3DeleteFileProps) {
+    const s3 = new S3({
+      region: bucketRegion,
+      accessKeyId: bucketAccessKeyId,
+      secretAccessKey: bucketSecretAccessKey,
+      signatureVersion: 'v4',
+    });
+
+    return s3
+      .deleteObject({
+        Bucket: bucketName,
+        Key: key,
+      })
+      .promise();
   }
 }
