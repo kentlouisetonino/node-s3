@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import s3GetSignedURL from '../lib/s3/s3-get-signed-url';
 import S3Service from '../lib/services/S3Service';
 
 export const S3GetSignedURL = async (req: Request, res: Response) => {
@@ -31,7 +30,7 @@ export const S3GetSignedURL = async (req: Request, res: Response) => {
     });
   } else {
     try {
-      const s3ObjectURL = await s3GetSignedURL({
+      const s3ObjectURL = await S3Service.getSignedURL({
         bucketName: bucketName,
         bucketRegion: bucketRegion,
         bucketAccessKeyId: bucketAccessKeyId,
@@ -92,7 +91,7 @@ export const S3Upload = async (req: Request, res: Response) => {
         fileContentType: file.mimetype!,
       });
 
-      const s3ObjectURL = await s3GetSignedURL({
+      const s3ObjectURL = await S3Service.getSignedURL({
         bucketName: bucketName,
         bucketRegion: bucketRegion,
         bucketAccessKeyId: bucketAccessKeyId,
