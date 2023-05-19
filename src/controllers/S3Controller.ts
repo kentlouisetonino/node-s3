@@ -1,8 +1,7 @@
 import { Request, Response } from 'express';
-
 import s3DeleteFile from '../lib/s3/s3-delete-file';
 import s3GetSignedURL from '../lib/s3/s3-get-signed-url';
-import s3UploadFile from '../lib/s3/s3-upload-file';
+import S3Service from '../lib/services/S3Service';
 
 export const S3GetSignedURL = async (req: Request, res: Response) => {
   const bucketName: any = req.query?.bucketName;
@@ -83,7 +82,7 @@ export const S3Upload = async (req: Request, res: Response) => {
     });
   } else {
     try {
-      const s3Object = await s3UploadFile({
+      const s3Object = await S3Service.uploadFile({
         bucketName: bucketName,
         bucketRegion: bucketRegion,
         bucketAccessKeyId: bucketAccessKeyId,
