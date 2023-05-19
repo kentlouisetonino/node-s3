@@ -1,11 +1,11 @@
-import S3 from 'aws-sdk/clients/s3'
+import S3 from 'aws-sdk/clients/s3';
 
 interface S3GetSignedURLProps {
-  bucketName: string
-  bucketRegion: string
-  bucketAccessKeyId: string
-  bucketSecretAccessKey: string
-  key: string
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  key: string;
 }
 
 /**
@@ -23,11 +23,11 @@ export default async function s3GetSignedURL({
     region: bucketRegion,
     accessKeyId: bucketAccessKeyId,
     secretAccessKey: bucketSecretAccessKey,
-  })
+  });
 
   return s3.getSignedUrl('getObject', {
     Bucket: bucketName,
     Key: key,
     Expires: 60 * 5,
-  })
+  });
 }
