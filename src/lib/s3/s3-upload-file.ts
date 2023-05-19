@@ -1,14 +1,14 @@
-import S3 from 'aws-sdk/clients/s3'
+import S3 from 'aws-sdk/clients/s3';
 
 interface S3UploadFileProps {
-  bucketName: string
-  bucketRegion: string
-  bucketAccessKeyId: string
-  bucketSecretAccessKey: string
-  fileBuffer: any
-  fileEncoding: string
-  fileName: string
-  fileContentType: string
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  fileBuffer: any;
+  fileEncoding: string;
+  fileName: string;
+  fileContentType: string;
 }
 
 /**
@@ -29,7 +29,7 @@ export default async function s3UploadFile({
     region: bucketRegion,
     accessKeyId: bucketAccessKeyId,
     secretAccessKey: bucketSecretAccessKey,
-  })
+  });
 
   const params = {
     Bucket: bucketName,
@@ -38,7 +38,7 @@ export default async function s3UploadFile({
     ContentType: fileContentType,
     Key: fileName,
     ACL: 'public-read',
-  }
+  };
 
-  return s3.upload(params).promise()
+  return s3.upload(params).promise();
 }

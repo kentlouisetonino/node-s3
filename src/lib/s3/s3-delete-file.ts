@@ -1,11 +1,11 @@
-import S3 from 'aws-sdk/clients/s3'
+import S3 from 'aws-sdk/clients/s3';
 
 interface S3DeleteFileProps {
-  bucketName: string
-  bucketRegion: string
-  bucketAccessKeyId: string
-  bucketSecretAccessKey: string
-  key: string
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  key: string;
 }
 
 /**
@@ -24,12 +24,12 @@ export default async function s3DeleteFile({
     accessKeyId: bucketAccessKeyId,
     secretAccessKey: bucketSecretAccessKey,
     signatureVersion: 'v4',
-  })
+  });
 
   return s3
     .deleteObject({
       Bucket: bucketName,
       Key: key,
     })
-    .promise()
+    .promise();
 }
