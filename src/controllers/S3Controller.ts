@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import s3DeleteFile from '../lib/s3/s3-delete-file';
 import s3GetSignedURL from '../lib/s3/s3-get-signed-url';
 import S3Service from '../lib/services/S3Service';
 
@@ -144,7 +143,7 @@ export const S3DeleteFile = async (req: Request, res: Response) => {
     });
   } else {
     try {
-      const test = await s3DeleteFile({
+      await S3Service.deleteFile({
         bucketName: bucketName,
         bucketRegion: bucketRegion,
         bucketAccessKeyId: bucketAccessKeyId,

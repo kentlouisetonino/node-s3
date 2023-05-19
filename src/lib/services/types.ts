@@ -8,3 +8,11 @@ export interface S3UploadFileProps {
   fileName: string;
   fileContentType: string;
 }
+
+export interface S3DeleteFileProps {
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  key: string;
+}
