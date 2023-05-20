@@ -85,9 +85,9 @@ export const S3Upload = async (req: Request, res: Response) => {
         bucketRegion: bucketRegion,
         bucketAccessKeyId: bucketAccessKeyId,
         bucketSecretAccessKey: bucketSecretAccessKey,
+        fileName: file.originalname,
         fileBuffer: file.buffer,
         fileEncoding: file.encoding,
-        fileName: file.originalname,
         fileContentType: file.mimetype!,
       });
 
