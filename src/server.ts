@@ -1,8 +1,8 @@
 import express, { Request, Response, json, urlencoded } from 'express';
 import morgan from 'morgan';
-import EnvironmentService from './libs/services/EnvironmentService';
-import ExpressService from './libs/services/ExpressService';
 import S3Route from './routes/S3Route';
+import EnvironmentService from './services/EnvironmentService';
+import ExpressService from './services/ExpressService';
 
 // * Server listener.
 ExpressService.app.listen(EnvironmentService.PORT, () => {
