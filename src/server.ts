@@ -1,12 +1,14 @@
 import express, { Request, Response, json, urlencoded } from 'express';
 import morgan from 'morgan';
-import environment from './libs/environment';
+import EnvironmentService from './libs/services/EnvironmentService';
 import ExpressService from './libs/services/ExpressService';
 import S3Route from './routes/S3Route';
 
 // * Server listener.
-ExpressService.app.listen(environment.PORT, () => {
-  console.log(`Server is running in http://localhost:${environment.PORT}`);
+ExpressService.app.listen(EnvironmentService.PORT, () => {
+  console.log(
+    `Server is running in http://localhost:${EnvironmentService.PORT}`
+  );
 });
 
 // * Server middlewares.
