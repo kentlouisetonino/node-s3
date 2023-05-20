@@ -3,8 +3,8 @@ import {
   S3GetSignedURL,
   S3Upload,
 } from '../controllers/S3Controller';
-import multerInstance from '../lib/multer-instance';
-import router from '../lib/router';
+import multerInstance from '../libs/multer-instance';
+import router from '../libs/router';
 
 router.get('/url', S3GetSignedURL);
 router.post('/upload', multerInstance.single('file'), S3Upload);
