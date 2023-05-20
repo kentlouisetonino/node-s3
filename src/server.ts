@@ -1,7 +1,7 @@
 import express, { Request, Response, json, urlencoded } from 'express';
 import morgan from 'morgan';
-import app from './lib/app';
-import environment from './lib/environment';
+import app from './libs/app';
+import environment from './libs/environment';
 import S3Route from './routes/S3Route';
 
 // * server listener
