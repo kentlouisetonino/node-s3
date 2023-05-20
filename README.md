@@ -25,7 +25,7 @@ npm run dev
 
 > - Upload a file.
 
-```bash
+```plaintext
 HTTP Method: POST
 URL: http://localhost:11000/api/s3/upload
 Body (form-data):
@@ -38,7 +38,7 @@ Body (form-data):
 
 > - Delete a file.
 
-```bash
+```plaintext
 HTTP Method: POST
 URL: http://localhost:11000/api/s3/delete
 Body (form-data):
@@ -51,7 +51,7 @@ Body (form-data):
 
 > - Get the signed URL of the file.
 
-```bash
+```plaintext
 HTTP Method: GET
 URL: http://localhost:11000/api/s3/url
 Params:
