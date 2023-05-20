@@ -6,18 +6,14 @@ import {
 import ExpressService from '../services/ExpressService';
 import MulterService from '../services/MulterService';
 
-ExpressService.router.get('/url', S3GetSignedURL);
+// * Get the express router instance.
+const expressRouter = ExpressService.router;
 
-ExpressService.router.post(
-  '/upload',
-  MulterService.memoryStorage.single('file'),
-  S3Upload
-);
+// * Get the multer memory storage instance.
+const multerMemoryStorage = MulterService.memoryStorage;
 
-ExpressService.router.post(
-  '/delete',
-  MulterService.memoryStorage.fields([]),
-  S3DeleteFile
-);
+expressRouter.get('/url', S3GetSignedURL);
+expressRouter.post('/upload', multerMemoryStorage.single('file'), S3Upload);
+expressRouter.post('/delete', multerMemoryStorage.fields([]), S3DeleteFile);
 
-export default ExpressService.router;
+export default expressRouter;

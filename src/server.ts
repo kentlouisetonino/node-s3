@@ -4,23 +4,26 @@ import S3Route from './routes/S3Route';
 import EnvironmentService from './services/EnvironmentService';
 import ExpressService from './services/ExpressService';
 
+// * Get the express application instance.
+const expressApp = ExpressService.app;
+
 // * Server listener.
-ExpressService.app.listen(EnvironmentService.PORT, () => {
+expressApp.listen(EnvironmentService.PORT, () => {
   console.log(
     `Server is running in http://localhost:${EnvironmentService.PORT}`
   );
 });
 
 // * Server middlewares.
-ExpressService.app.use(morgan('tiny'));
-ExpressService.app.use(express.static('public'));
-ExpressService.app.use(json());
-ExpressService.app.use(urlencoded({ extended: true }));
+expressApp.use(morgan('tiny'));
+expressApp.use(express.static('public'));
+expressApp.use(json());
+expressApp.use(urlencoded({ extended: true }));
 
 // * Server root endpoints.
-ExpressService.app.get('/', (_: Request, res: Response) => {
+expressApp.get('/', (_: Request, res: Response) => {
   res.sendFile('index.html', { root: 'public' });
 });
 
 // * Server S3 endpoints.
-ExpressService.app.use('/api/s3', S3Route);
+expressApp.use('/api/s3', S3Route);
