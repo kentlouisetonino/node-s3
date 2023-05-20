@@ -3,11 +3,11 @@ import S3Service from '../services/S3Service';
 
 export default class S3Controller {
   static async getSignedURL(req: Request, res: Response) {
-    const bucketName: any = req.query?.bucketName;
-    const bucketRegion: any = req.query?.bucketRegion;
-    const bucketAccessKeyId: any = req.query?.bucketAccessKeyId;
-    const bucketSecretAccessKey: any = req.query?.bucketSecretAccessKey;
-    const key: any = req.query?.key;
+    const bucketName = String(req.query?.bucketName);
+    const bucketRegion = String(req.query?.bucketRegion);
+    const bucketAccessKeyId = String(req.query?.bucketAccessKeyId);
+    const bucketSecretAccessKey = String(req.query?.bucketSecretAccessKey);
+    const key = String(req.query?.key);
 
     if (!bucketName) {
       res.send({
