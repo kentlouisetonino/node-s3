@@ -3,9 +3,9 @@ export interface S3UploadFileProps {
   bucketRegion: string;
   bucketAccessKeyId: string;
   bucketSecretAccessKey: string;
-  fileBuffer: any;
-  fileEncoding: string;
   fileName: string;
+  fileBuffer: Buffer;
+  fileEncoding: string;
   fileContentType: string;
 }
 
