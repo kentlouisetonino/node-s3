@@ -1,8 +1,8 @@
 import express, { Request, Response, json, urlencoded } from 'express';
 import morgan from 'morgan';
 import DefaultRoute from './routes/DefaultRoute';
-import EnvironmentService from './services/EnvironmentService/EnvironmentService';
-import ExpressService from './services/ExpressService/ExpressService';
+import EnvironmentService from './services/EnvironmentService';
+import ExpressService from './services/ExpressService';
 
 // * Get the express application instance.
 const app = ExpressService.app;

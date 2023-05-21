@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import S3Service from '../services/S3Service/S3Service';
+import S3Service from '../services/S3Service';
 
 export default class DefaultController {
   /**
