@@ -26,4 +26,4 @@ app.get('/', (_: Request, res: Response) => {
 });
 
 // * Server endpoints.
-app.use('/api/s3', DefaultRoute);
+app.use('/api/default/s3', DefaultRoute);
