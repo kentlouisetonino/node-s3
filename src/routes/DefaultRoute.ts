@@ -1,6 +1,6 @@
 import DefaultController from '../controllers/DefaultController';
-import ExpressService from '../services/ExpressService';
-import MulterService from '../services/MulterService';
+import ExpressService from '../services/ExpressService/ExpressService';
+import MulterService from '../services/MulterService/MulterService';
 
 // * Get the express router instance.
 const router = ExpressService.router;
