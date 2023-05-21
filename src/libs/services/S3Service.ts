@@ -1,8 +1,8 @@
 import S3 from 'aws-sdk/clients/s3';
 import {
-  S3DeleteFileProps,
-  S3GetSignedURLProps,
-  S3UploadFileProps,
+  S3DeleteFileInterface,
+  S3GetSignedURLInterface,
+  S3UploadFileInterface,
 } from './types';
 
 export default class S3Service {
@@ -26,7 +26,7 @@ export default class S3Service {
     fileBuffer,
     fileEncoding,
     fileContentType,
-  }: S3UploadFileProps): Promise<S3.ManagedUpload.SendData> {
+  }: S3UploadFileInterface): Promise<S3.ManagedUpload.SendData> {
     const s3 = new S3({
       region: bucketRegion,
       accessKeyId: bucketAccessKeyId,
@@ -59,7 +59,7 @@ export default class S3Service {
     bucketAccessKeyId,
     bucketSecretAccessKey,
     key,
-  }: S3DeleteFileProps) {
+  }: S3DeleteFileInterface) {
     const s3 = new S3({
       region: bucketRegion,
       accessKeyId: bucketAccessKeyId,
@@ -89,7 +89,7 @@ export default class S3Service {
     bucketAccessKeyId,
     bucketSecretAccessKey,
     key,
-  }: S3GetSignedURLProps) {
+  }: S3GetSignedURLInterface) {
     const s3 = new S3({
       region: bucketRegion,
       accessKeyId: bucketAccessKeyId,

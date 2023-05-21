@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import S3Service from '../libs/services/S3Service';
 
-export default class DefaultController {
+export default class MongoDBController {
   /**
    * A method that will get the signed URL of the file
    * in AWS S3 and access it on the browser.
