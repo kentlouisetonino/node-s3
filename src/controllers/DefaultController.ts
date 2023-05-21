@@ -1,7 +1,11 @@
 import { Request, Response } from 'express';
 import S3Service from '../services/S3Service';
 
-export default class S3Controller {
+export default class DefaultController {
+  /**
+   * A method that will get the signed URL of the file
+   * in AWS S3 and access it on the browser.
+   */
   static async getSignedURL(req: Request, res: Response) {
     const bucketName = String(req.query?.bucketName);
     const bucketRegion = String(req.query?.bucketRegion);
@@ -52,6 +56,9 @@ export default class S3Controller {
     }
   }
 
+  /**
+   * A method used to upload a file in AWS S3.
+   */
   static async uploadFile(req: Request, res: Response) {
     const bucketName = req.body?.bucketName;
     const bucketRegion = req.body?.bucketRegion;
@@ -114,6 +121,9 @@ export default class S3Controller {
     }
   }
 
+  /**
+   * A method used to delete a file in AWS S3.
+   */
   static async deleteFile(req: Request, res: Response) {
     const bucketName: any = req.body?.bucketName;
     const bucketRegion: any = req.body?.bucketRegion;
