@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import S3Service from '../services/S3Service';
 
-export default class DefaultController {
+export default class S3Controller {
   /**
    * A method that will get the signed URL of the file
    * in AWS S3 and access it on the browser.

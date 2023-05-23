@@ -2,7 +2,7 @@ require('dotenv').config();
 import express, { Request, Response, json, urlencoded } from 'express';
 import mongoose, { ConnectOptions } from 'mongoose';
 import morgan from 'morgan';
-import DefaultRoute from './routes/DefaultRoute';
+import S3Route from './routes/S3Route';
 import ColorService from './services/ColorService';
 import EnvironmentService from './services/EnvironmentService';
 import ExpressService from './services/ExpressService';
@@ -40,5 +40,5 @@ app.get('/', (_: Request, res: Response) => {
   res.sendFile('index.html', { root: 'public' });
 });
 
-// * Server endpoints.
-app.use('/api/default/s3', DefaultRoute);
+// * Server other endpoints.
+app.use('/api/s3', S3Route);
