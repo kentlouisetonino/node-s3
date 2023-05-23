@@ -1,5 +1,4 @@
 ## Description
-
 > - A backend application that allows to test your AWS S3 bucket with NodeJS.
 
 > - The following features below are implemented are: `upload a file`, `delete a file`, and `get the signed URL of the file`.
@@ -15,7 +14,6 @@
 
 
 ## Setup
-
 > - Run the following commands.
 
 ```bash
@@ -69,7 +67,6 @@ Params:
 
 
 ## Testing
-
-
 https://user-images.githubusercontent.com/69438999/217460437-453a250e-9770-42de-8eb6-0f015c378e65.mp4
+A server-side application that allows you to shorten a specific URL.
 
