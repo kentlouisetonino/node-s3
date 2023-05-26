@@ -10,7 +10,7 @@
     "build": "tsc --build",
     "start": "tsc --build && node ./dist/server.js",
     "dev": "nodemon --config nodemon.json ./src/server.ts",
-    "format": "prettier --write \"src/**/*.ts\" \"./**/*.{json, prettierrc}\""
+    "format": "prettier --write \"./**/*.{html,css,ts,md,json,prettierrc,yml}\""
   },
   "license": "ISC",
   "dependencies": {
