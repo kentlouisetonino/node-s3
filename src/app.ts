@@ -6,10 +6,25 @@ import S3Route from './routes/S3Route';
 import ColorService from './services/ColorService';
 import EnvironmentService from './services/EnvironmentService';
 import ExpressService from './services/ExpressService';
+import SQLService from './services/SQLService';
 import { ColorEnum } from './services/types';
 
 // * Get the express application instance.
 const app = ExpressService.app;
+
+// * Connect to MySQL.
+SQLService.connection.connect((error) => {
+  if (error) {
+    ColorService.logText(
+      ColorEnum.FgRed,
+      'Something is wrong. Server is not connected to MySQL.'
+    );
+  }
+
+  if (!error) {
+    ColorService.logText(ColorEnum.FgBlue, 'Server is connected to MySQL');
+  }
+});
 
 // * Connect to mongodb.
 mongoose
@@ -19,6 +34,12 @@ mongoose
   } as ConnectOptions)
   .then(() => {
     ColorService.logText(ColorEnum.FgYellow, `Server is connected to MongoD`);
+  })
+  .catch(() => {
+    ColorService.logText(
+      ColorEnum.FgRed,
+      `Something is wrong. Server is not connected to MongoDB.`
+    );
   });
 
 // * Server middlewares.
