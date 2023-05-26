@@ -35,7 +35,7 @@ export default class S3Controller {
       });
     } else {
       try {
-        const s3ObjectURL = await S3Service.getSignedURL({
+        const s3ObjectURL = S3Service.getSignedURL({
           bucketName: bucketName,
           bucketRegion: bucketRegion,
           bucketAccessKeyId: bucketAccessKeyId,
@@ -99,7 +99,7 @@ export default class S3Controller {
           fileContentType: file.mimetype!,
         });
 
-        const s3ObjectURL = await S3Service.getSignedURL({
+        const s3ObjectURL = S3Service.getSignedURL({
           bucketName: bucketName,
           bucketRegion: bucketRegion,
           bucketAccessKeyId: bucketAccessKeyId,
