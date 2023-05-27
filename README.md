@@ -1,4 +1,4 @@
-## Descriptio
+## Description
 > - A backend application that allows to test your AWS S3 bucket with NodeJS.
     The following features below are implemented are: upload, delete, and get
     the signed URL of the file.
