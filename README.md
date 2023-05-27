@@ -55,6 +55,8 @@ Body (form-data):
     file: File
 ```
 
+<br />
+
 > - Delete a file.
 
 ```plaintext
@@ -68,6 +70,8 @@ Body (form-data):
     key: string
 ```
 
+<br />
+
 > - Get the signed URL of the file.
 
 ```plaintext
@@ -80,6 +84,8 @@ Params:
     bucketSecretAccessKey: string
     key: string
 ```
+
+<br />
 
 > - Testing for endpoints.
 
