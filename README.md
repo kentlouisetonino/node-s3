@@ -81,10 +81,6 @@ Params:
     key: string
 ```
 
-<br />
-<br />
-<br />
-
-## Testing
+> - Testing for endpoints.
 
 https://user-images.githubusercontent.com/69438999/217460437-453a250e-9770-42de-8eb6-0f015c378e65.mp4
