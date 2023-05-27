@@ -1,2 +1,1 @@
-CREATE DATABASE IF NOT EXISTS backend-nodejs-s3;
-
+CREATE DATABASE IF NOT EXISTS backend-nodejs;
