@@ -1,11 +1,16 @@
-## Description
-
+## Descriptio
 > - A backend application that allows to test your AWS S3 bucket with NodeJS.
+
+<br />
 
 > - The following features below are implemented are: upload, delete, and get
     the signed URL of the file.
 
+<br />
+
 > - Amazon S3: https://aws.amazon.com/s3/
+
+<br />
 
 > - SDK V3: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating-to-v3.html
 
@@ -13,8 +18,9 @@
 <br />
 <br />
 
-## Setup
 
+
+## Setup
 > - Run the following commands.
 
 ```bash
@@ -22,6 +28,8 @@ docker compose up --build -d
 yarn install
 yarn build
 ```
+
+<br />
 
 > - Create a `.env` file with the following variables.
 
@@ -38,6 +46,8 @@ MYSQL_PASSWORD=root
 <br />
 <br />
 <br />
+
+
 
 ## API Endpoints for AWS S3
 
