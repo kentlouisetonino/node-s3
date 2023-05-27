@@ -3,6 +3,7 @@
 > - A backend application that allows to test your AWS S3 bucket with NodeJS.
 
 > - The following features below are implemented are: `upload a file`, `delete a file`, and
+
     `get the signed URL of the file`.
 
 > - Amazon S3: https://aws.amazon.com/s3/
@@ -18,9 +19,28 @@
 > - Run the following commands.
 
 ```bash
-npm run build
-npm run dev
+docker compose up --build -d
+yarn install
+yarn build
 ```
+
+> - Create a `.env` file with the following variables.
+
+```bash
+MONGODB_URI=
+
+MYSQL_HOST=localhost
+MYSQL_PORT=3310
+MYSQL_DATABASE=backend-nodejs
+MYSQL_USER=root
+MYSQL_PASSWORD=root
+```
+
+<br />
+<br />
+<br />
+
+## API Endpoints for AWS S3
 
 > - Upload a file.
 
