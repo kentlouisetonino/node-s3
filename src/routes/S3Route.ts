@@ -1,16 +1,21 @@
 import S3Controller from '../controllers/S3Controller';
-import ExpressService from '../services/ExpressService';
-import MulterService from '../services/MulterService';
+import ExpressService from '../libs/internal-services/ExpressService';
+import MulterService from '../libs/internal-services/MulterService';
 
 // * Get the express router instance.
 const router = ExpressService.router;
 
 // * Get the multer memory storage instance.
-const multerMS = MulterService.memoryStorage;
+const multer = MulterService.memoryStorage;
 
-// * Default S3 endpoints.
-router.get('/url', S3Controller.getSignedURL);
-router.post('/upload', multerMS.single('file'), S3Controller.uploadFile);
-router.post('/delete', multerMS.fields([]), S3Controller.deleteFile);
+// * Default endpoints.
+router.get('/default/url', S3Controller.getSignedURL);
+router.post('/default/upload', multer.single('file'), S3Controller.uploadFile);
+router.post('/default/delete', multer.fields([]), S3Controller.deleteFile);
+
+// * PostgreSQL endpoints
+router.get('/mongodb/url', S3Controller.getSignedURL);
+router.post('/mongodb/upload', multer.single('file'), S3Controller.uploadFile);
+router.post('/mongodb/delete', multer.fields([]), S3Controller.deleteFile);
 
 export default router;

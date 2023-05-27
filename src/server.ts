@@ -1,8 +1,8 @@
 require('dotenv').config();
 import app from './app';
-import ColorService from './services/ColorService';
-import EnvironmentService from './services/EnvironmentService';
-import { ColorEnum } from './services/types';
+import ColorService from './libs/internal-services/ColorService';
+import EnvironmentService from './libs/internal-services/EnvironmentService';
+import { ColorEnum } from './libs/internal-services/types';
 
 // * Server listener.
 app.listen(EnvironmentService.PORT, () => {

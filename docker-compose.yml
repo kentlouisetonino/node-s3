@@ -1,12 +1,12 @@
 version: '3.6'
 services:
-  backend-nodejs-s3-db:
+  db:
     image: mysql:8.0.28
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=backend-nodejs-s3
+      - MYSQL_DATABASE=backend-nodejs
     ports:
       - '3310:3306'
     volumes:

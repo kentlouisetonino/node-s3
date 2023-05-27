@@ -1,5 +1,5 @@
 {
-  "name": "backend-nodejs-s3",
+  "name": "backend-nodejs",
   "version": "1.0.0",
   "author": "Kent Louise Tonino",
   "main": "./dist/server.js",
@@ -12,7 +12,7 @@
     "dev": "nodemon --config nodemon.json ./src/server.ts",
     "format": "prettier --write \"./**/*.{html,css,ts,md,json,prettierrc,yml}\""
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/aws-sdk": "^2.7.0",
     "@types/dotenv": "^8.2.0",
