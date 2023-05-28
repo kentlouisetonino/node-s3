@@ -1,7 +1,7 @@
 ## Description
-> - A backend application that allows to test your AWS S3 bucket with NodeJS.
-    The following features below are implemented are: upload, delete, and get
-    the signed URL of the file.
+> - A backend application that integrates different external services using Rest API,
+    ExpressJS, TypeScript, and NodeJS. This includes also additional support of
+    saving data in MySQL and MongoDB.
 
 <br />
 <br />
@@ -38,7 +38,7 @@ MYSQL_PASSWORD=root
 
 
 
-## API Endpoints for AWS S3
+## API Endpoints | AWS S3
 
 > - Upload a file.
 
