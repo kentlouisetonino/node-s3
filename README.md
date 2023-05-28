@@ -1,15 +1,15 @@
 ## Description
+
 > - A backend application that integrates different external services using Rest API,
-    ExpressJS, TypeScript, and NodeJS. This includes also additional support of
-    saving data in MySQL and MongoDB.
+
+    ExpressJS, TypeScript, and NodeJS.
 
 <br />
 <br />
 <br />
-
-
 
 ## Setup
+
 > - Run the following commands.
 
 ```bash
@@ -35,8 +35,6 @@ MYSQL_PASSWORD=root
 <br />
 <br />
 <br />
-
-
 
 ## API Endpoints | AWS S3
 
@@ -88,4 +86,3 @@ Params:
 > - Testing for endpoints.
 
 https://user-images.githubusercontent.com/69438999/217460437-453a250e-9770-42de-8eb6-0f015c378e65.mp4
-
