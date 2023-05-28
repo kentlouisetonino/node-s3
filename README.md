@@ -80,4 +80,3 @@ Params:
     bucketSecretAccessKey: string
     key: string
 ```
-
