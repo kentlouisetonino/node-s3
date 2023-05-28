@@ -1,7 +1,6 @@
 ## Description
 > - A backend application that integrates different external services using Rest API,
-    ExpressJS, TypeScript, and NodeJS. This includes also additional support of
-    saving data in MySQL and MongoDB.
+    ExpressJS, TypeScript, and NodeJS.
 
 <br />
 <br />
