@@ -2,11 +2,11 @@ require('dotenv').config();
 import express, { Request, Response, json, urlencoded } from 'express';
 import mongoose, { ConnectOptions } from 'mongoose';
 import morgan from 'morgan';
-import ColorService from './libs/internal-services/ColorService';
-import EnvironmentService from './libs/internal-services/EnvironmentService';
-import ExpressService from './libs/internal-services/ExpressService';
-import SQLService from './libs/internal-services/SQLService';
-import { ColorEnum } from './libs/internal-services/types';
+import ColorService from './libs/services/ColorService';
+import EnvironmentService from './libs/services/EnvironmentService';
+import ExpressService from './libs/services/ExpressService';
+import SQLService from './libs/services/SQLService';
+import { ColorEnum } from './libs/services/types';
 import S3Route from './routes/S3Route';
 
 // * Get the express application instance.
