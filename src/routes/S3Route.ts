@@ -13,9 +13,4 @@ router.get('/default/url', S3Controller.getSignedURL);
 router.post('/default/upload', multer.single('file'), S3Controller.uploadFile);
 router.post('/default/delete', multer.fields([]), S3Controller.deleteFile);
 
-// * PostgreSQL endpoints
-router.get('/mongodb/url', S3Controller.getSignedURL);
-router.post('/mongodb/upload', multer.single('file'), S3Controller.uploadFile);
-router.post('/mongodb/delete', multer.fields([]), S3Controller.deleteFile);
-
 export default router;
