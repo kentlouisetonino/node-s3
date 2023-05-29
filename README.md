@@ -42,7 +42,7 @@ MYSQL_PASSWORD=root
 
 ```plaintext
 HTTP Method: POST
-URL: http://localhost:11000/api/default/s3/upload
+URL: http://localhost:11000/api/s3/upload
 Body (form-data):
     bucketName: string
     bucketRegion: string
@@ -57,7 +57,7 @@ Body (form-data):
 
 ```plaintext
 HTTP Method: POST
-URL: http://localhost:11000/api/default/s3/delete
+URL: http://localhost:11000/api/s3/delete
 Body (form-data):
     bucketName: string
     bucketRegion: string
@@ -72,7 +72,7 @@ Body (form-data):
 
 ```plaintext
 HTTP Method: GET
-URL: http://localhost:11000/api/default/s3/url
+URL: http://localhost:11000/api/s3/url
 Params:
     bucketName: string
     bucketRegion: string
