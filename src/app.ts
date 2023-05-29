@@ -5,7 +5,7 @@ import morgan from 'morgan';
 import ColorService from './libs/services/ColorService';
 import EnvironmentService from './libs/services/EnvironmentService';
 import ExpressService from './libs/services/ExpressService';
-import SQLService from './libs/services/SQLService';
+import MySQLService from './libs/services/MySQLService';
 import { ColorEnum } from './libs/services/types';
 import S3Route from './routes/S3Route';
 
@@ -13,7 +13,7 @@ import S3Route from './routes/S3Route';
 const app = ExpressService.app;
 
 // * Connect to MySQL.
-SQLService.connection.connect((error) => {
+MySQLService.connection.connect((error) => {
   if (error) {
     ColorService.logText(
       ColorEnum.FgRed,

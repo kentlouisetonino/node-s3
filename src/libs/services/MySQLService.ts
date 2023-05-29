@@ -1,6 +1,6 @@
 import mysql from 'mysql2';
 
-export default class SQLService {
+export default class MySQLService {
   static connection = mysql.createConnection({
     host: String(process.env.MYSQL_HOST),
     port: Number(process.env.MYSQL_PORT),

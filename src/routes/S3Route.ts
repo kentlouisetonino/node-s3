@@ -9,8 +9,8 @@ const router = ExpressService.router;
 const multer = MulterService.memoryStorage;
 
 // * Default endpoints.
-router.get('/default/url', S3Controller.getSignedURL);
-router.post('/default/upload', multer.single('file'), S3Controller.uploadFile);
-router.post('/default/delete', multer.fields([]), S3Controller.deleteFile);
+router.get('/url', S3Controller.getSignedURL);
+router.post('/upload', multer.single('file'), S3Controller.uploadFile);
+router.post('/delete', multer.fields([]), S3Controller.deleteFile);
 
 export default router;
