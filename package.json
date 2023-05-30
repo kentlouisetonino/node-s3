@@ -2,14 +2,13 @@
   "name": "backend-nodejs",
   "version": "1.0.0",
   "author": "Kent Louise Tonino",
-  "main": "./dist/server.js",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
     "build": "tsc --build",
-    "start": "tsc --build && node ./dist/server.js",
-    "dev": "nodemon --config nodemon.json ./src/server.ts",
+    "start:rest": "tsc --build && node ./dist/server-rest.js",
+    "dev:rest": "nodemon --config nodemon.json ./src/server-rest.ts",
     "format": "prettier --write \"./**/*.{html,css,ts,md,json,prettierrc,yml}\""
   },
   "license": "MIT",
