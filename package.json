@@ -7,7 +7,11 @@
   },
   "scripts": {
     "build": "tsc --build",
+    "start:graphql": "tsc --build && node ./dist/server-graphql.js",
+    "start:grpc": "tsc --build && node ./dist/server-grpc.js",
     "start:rest": "tsc --build && node ./dist/server-rest.js",
+    "dev:graphql": "nodemon --config nodemon.json ./src/server-graphql.ts",
+    "dev:grpc": "nodemon --config nodemon.json ./src/server-graphql.ts",
     "dev:rest": "nodemon --config nodemon.json ./src/server-rest.ts",
     "format": "prettier --write \"./**/*.{html,css,ts,md,json,prettierrc,yml}\""
   },
