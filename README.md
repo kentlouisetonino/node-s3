@@ -1,8 +1,6 @@
 ## Description
 
-> - A backend application that integrates different external services using Rest API,
-
-    ExpressJS, TypeScript, and NodeJS.
+> - A backend application that integrates different external services using NodeJS.
 
 <br />
 <br />
