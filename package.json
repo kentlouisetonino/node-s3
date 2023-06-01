@@ -13,7 +13,7 @@
     "dev:graphql": "nodemon --config nodemon.json ./src/server-graphql.ts",
     "dev:grpc": "nodemon --config nodemon.json ./src/server-graphql.ts",
     "dev:rest": "nodemon --config nodemon.json ./src/server-rest.ts",
-    "format": "prettier --write \"./**/*.{html,css,ts,js,md,json,prettierrc,yml}\""
+    "format": "prettier --write \"./**/*.{html,css,ts,js,json,prettierrc,yml}\""
   },
   "license": "MIT",
   "dependencies": {
