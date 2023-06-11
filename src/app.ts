@@ -1,8 +1,8 @@
 require('dotenv').config();
 import express, { Request, Response, json, urlencoded } from 'express';
 import morgan from 'morgan';
-import ExpressService from './libs/services/ExpressService';
 import S3Route from './routes/S3Route';
+import ExpressService from './services/ExpressService';
 
 // * Get the express application instance.
 const app = ExpressService.app;

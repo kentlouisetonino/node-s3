@@ -1,6 +1,6 @@
 import S3Controller from '../controllers/S3Controller';
-import ExpressService from '../libs/services/ExpressService';
-import MulterService from '../libs/services/MulterService';
+import ExpressService from '../services/ExpressService';
+import MulterService from '../services/MulterService';
 
 // * Get the express router instance.
 const router = ExpressService.router;
