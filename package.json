@@ -6,7 +6,9 @@
     "build": "tsc --build",
     "start": "tsc --build && node ./dist/server.js",
     "dev": "nodemon --config nodemon.json ./src/server.ts",
-    "format": "prettier --write \"./**/*.{html,css,ts,js,json,prettierrc,yml}\""
+    "format": "prettier --write \"./**/*.{html,css,ts,js,json,prettierrc,yml}\"",
+    "test:all": "jest --watchAll",
+    "test:default": "jest --watch"
   },
   "license": "MIT",
   "dependencies": {
