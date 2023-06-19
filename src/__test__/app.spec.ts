@@ -1,7 +1,7 @@
 import request from 'supertest';
 import app from '../app';
 
-describe('#1. Test app.tsx', () => {
+describe('#1. Test app file.', () => {
   // * If endpoint exist.
   test('a. It should response the status code 200.', (done) => {
     request(app)
