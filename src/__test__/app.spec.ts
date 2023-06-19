@@ -2,11 +2,22 @@ import request from 'supertest';
 import app from '../app';
 
 describe('#1. Test app.tsx', () => {
-  test('#1.1. It should response the GET method.', (done) => {
+  // * If endpoint exist.
+  test('a. It should response the status code 200.', (done) => {
     request(app)
       .get('/')
       .then((response) => {
         expect(response.statusCode).toBe(200);
+        done();
+      });
+  });
+
+  // * If endpoint does not exist.
+  test('b. It should response the status code 404.', (done) => {
+    request(app)
+      .get('/not-found')
+      .then((response) => {
+        expect(response.statusCode).toBe(404);
         done();
       });
   });
