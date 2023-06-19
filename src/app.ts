@@ -1,3 +1,4 @@
+require('aws-sdk/lib/maintenance_mode_message').suppress = true;
 require('dotenv').config();
 import express, { Request, Response, json, urlencoded } from 'express';
 import morgan from 'morgan';
