@@ -20,6 +20,13 @@ yarn build
 ```
 
 <br />
+
+> - For unit test run the command.
+```bash
+yarn test
+```
+
+<br />
 <br />
 <br />
 
@@ -67,4 +74,3 @@ Params:
     bucketSecretAccessKey: string
     key: string
 ```
-
