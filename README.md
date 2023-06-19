@@ -23,7 +23,7 @@ yarn build
 
 > - For unit test run the command.
 ```bash
-yarn test
+yarn test:all
 ```
 
 <br />
