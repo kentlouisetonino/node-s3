@@ -6,4 +6,10 @@ describe('[ ExpressService ]', () => {
     expect(typeof app).toBe('function');
     done();
   });
+
+  test('b. It should test the Express.router method. ', (done) => {
+    const router = ExpressService.router;
+    expect(typeof router).toBe('function');
+    done();
+  });
 });
