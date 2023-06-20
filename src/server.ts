@@ -6,8 +6,10 @@ import { ColorEnum } from './services/types';
 
 // * Server listener.
 app.listen(EnvironmentService.PORT, () => {
-  ColorService.logText(
+  const serverLogger = ColorService.logText(
     ColorEnum.FgCyan,
     `Server is running in http://localhost:${EnvironmentService.PORT}`
   );
+
+  console.log(serverLogger);
 });
