@@ -1,6 +1,6 @@
 import EnvironmentService from '../../services/EnvironmentService';
 
-describe('[ EnvironmentService ]', () => {
+describe('[ src/services/EnvironmentService ]', () => {
   test('a. It should return the right port.', (done) => {
     const port = EnvironmentService.PORT;
     expect(port).toBe(11000);
