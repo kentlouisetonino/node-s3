@@ -15,15 +15,12 @@
 > - Run the following commands.
 
 ```bash
+# Development
 yarn install
 yarn build
 yarn dev
-```
 
-<br />
-
-> - For unit test run the command.
-```bash
+# Unit Test
 yarn test:all
 ```
 
