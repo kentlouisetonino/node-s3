@@ -1,14 +1,33 @@
 {
+  // * https://www.typescriptlang.org/tsconfig#compilerOptions
   "compilerOptions": {
+    // * https://www.typescriptlang.org/tsconfig#types
     "types": ["node", "jest"],
+
+    // * https://www.typescriptlang.org/tsconfig#target
     "target": "es2016",
+
+    // * https://www.typescriptlang.org/tsconfig#module
     "module": "commonjs",
+
+    // * https://www.typescriptlang.org/tsconfig#esModuleInterop
     "esModuleInterop": true,
+
+    // * https://www.typescriptlang.org/tsconfig#forceConsistentCasingInFileNames
     "forceConsistentCasingInFileNames": true,
+    
+    // * https://www.typescriptlang.org/tsconfig#resolveJsonModule
     "resolveJsonModule": true,
+
+    // * https://www.typescriptlang.org/tsconfig#strict
     "strict": true,
+
+    // * https://www.typescriptlang.org/tsconfig#skipLibCheck
     "skipLibCheck": true,
+
+    // * https://www.typescriptlang.org/tsconfig#outDir
     "outDir": "./dist"
   },
+  // * https://www.typescriptlang.org/tsconfig#include
   "include": ["src/**/*.ts"]
 }
