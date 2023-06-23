@@ -3,4 +3,4 @@ node_modules
 dist
 
 # * Unit tests related.
-./src/coverage
+/src/coverage
