@@ -1,9 +1,31 @@
 import S3 from 'aws-sdk/clients/s3';
-import {
-  S3DeleteFileInterface,
-  S3GetSignedURLInterface,
-  S3UploadFileInterface,
-} from './types';
+
+export interface S3UploadFileInterface {
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  fileName: string;
+  fileBuffer: Buffer;
+  fileEncoding: string;
+  fileContentType: string;
+}
+
+export interface S3DeleteFileInterface {
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  key: string;
+}
+
+export interface S3GetSignedURLInterface {
+  bucketName: string;
+  bucketRegion: string;
+  bucketAccessKeyId: string;
+  bucketSecretAccessKey: string;
+  key: string;
+}
 
 export default class S3Service {
   /**
