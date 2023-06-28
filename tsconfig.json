@@ -15,7 +15,7 @@
 
     // * https://www.typescriptlang.org/tsconfig#forceConsistentCasingInFileNames
     "forceConsistentCasingInFileNames": true,
-    
+
     // * https://www.typescriptlang.org/tsconfig#resolveJsonModule
     "resolveJsonModule": true,
 
