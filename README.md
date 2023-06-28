@@ -1,6 +1,6 @@
 ## Description
 
-> - A backend application that integrates Amazon S3 with NodeJS.
+> - A backend application that integrates AWS S3 with NodeJS and ExpressJS.
 
 <br />
 
