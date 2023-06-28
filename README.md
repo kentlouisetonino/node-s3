@@ -1,14 +1,20 @@
 ## Description
 
-> - A backend application that integrates AWS S3 with NodeJS and ExpressJS.
+> - A backend application that integrates AWS S3 with REST APIs, TypeScript, ExpressJS, and NodeJS.
 
 <br />
 
-> - Link: https://aws.amazon.com/s3/
+> - Amazon S3 Page: https://aws.amazon.com/s3/
+
+<br />
+
+> - NPM Package: https://www.npmjs.com/package/aws-sdk
 
 <br />
 <br />
 <br />
+
+
 
 ## Setup
 
