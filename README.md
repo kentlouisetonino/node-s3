@@ -1,6 +1,6 @@
 ## Description
 
-> - A backend application that integrates AWS S3 with REST APIs, TypeScript, ExpressJS, and NodeJS.
+> - A backend application that integrates Amazon S3. Uses AWS SDK, REST APIs, TypeScript, ExpressJS, and NodeJS.
 
 <br />
 
