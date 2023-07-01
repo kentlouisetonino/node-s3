@@ -1,7 +1,6 @@
 ## Description
 
-> - A full-stack application that allows to save a song description and lyrics. Uses ReactJS,
-    NextJS, REST APIs, TypeORM, JWT, NestJS, MySQL, TypeScript, NodeJS, and Docker.
+> - A backend application that integrates Amazon S3. Uses AWS SDK, REST APIs, TypeScript, ExpressJS, and NodeJS.
 
 <br />
 
