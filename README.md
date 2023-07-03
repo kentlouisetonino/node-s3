@@ -9,7 +9,7 @@
 
 <br />
 
-> - NPM Package: https://www.npmjs.com/package/aws-sdk
+> - AWS SDK Page: https://www.npmjs.com/package/aws-sdk
 
 <br />
 <br />
