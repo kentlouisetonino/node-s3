@@ -8,18 +8,18 @@ import ExpressService from './services/ExpressService';
 // * Get the express application instance.
 const app = ExpressService.app;
 
-// * Server middlewares.
+// * App middlewares.
 app.use(morgan('tiny'));
 app.use(express.static('public'));
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
-// * Server root endpoint.
+// * App root endpoint.
 app.get('/', (_: Request, res: Response) => {
   res.sendFile('index.html', { root: 'public' });
 });
 
-// * Server other endpoints.
+// * App other endpoints.
 app.use('/api/s3', S3Route);
 
 // * Separate app and server.
