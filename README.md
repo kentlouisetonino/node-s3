@@ -10,10 +10,6 @@
 
 > - AWS SDK Page: https://www.npmjs.com/package/aws-sdk
 
-<br />
-
-https://github.com/kentlouisetonino/backend-nodejs-s3/assets/69438999/1c11dff8-1d14-4b15-99bc-9a597166d578
-
 
 
 <br />
