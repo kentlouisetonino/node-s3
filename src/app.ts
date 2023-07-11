@@ -1,7 +1,8 @@
 require('aws-sdk/lib/maintenance_mode_message').suppress = true;
 require('dotenv').config();
-import express, { Request, Response, json, urlencoded } from 'express';
+import express, { json, urlencoded } from 'express';
 import morgan from 'morgan';
+import DefaultRoute from './routes/DefaultRoute';
 import S3Route from './routes/S3Route';
 import ExpressService from './services/ExpressService';
 
@@ -14,12 +15,8 @@ app.use(express.static('public'));
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
-// * App root endpoint.
-app.get('/', (_: Request, res: Response) => {
-  res.sendFile('index.html', { root: 'public' });
-});
-
 // * App other endpoints.
+app.use('/', DefaultRoute);
 app.use('/api/s3', S3Route);
 
 // * Separate app and server.
