@@ -67,23 +67,23 @@ export default class S3Controller {
     const file: any = req?.file;
 
     if (!bucketName) {
-      res.send({
+      return res.send({
         error: 'Bucket name is required.',
       });
     } else if (!bucketRegion) {
-      res.send({
+      return res.send({
         error: 'Bucket region is required.',
       });
     } else if (!bucketAccessKeyId) {
-      res.send({
+      return res.send({
         error: 'Bucket access key ID is required.',
       });
     } else if (!bucketSecretAccessKey) {
-      res.send({
+      return res.send({
         error: 'Bucket secret access key is required.',
       });
     } else if (!file) {
-      res.send({
+      return res.send({
         error: 'File is required.',
       });
     } else {
@@ -107,13 +107,13 @@ export default class S3Controller {
           key: s3Object.Key,
         });
 
-        res.send({
+        return res.send({
           statusCode: 200,
           key: s3Object.Key,
           url: s3ObjectURL,
         });
       } catch (error) {
-        res.send({
+        return res.send({
           statusCode: 500,
           error: `${error}`,
         });
@@ -132,23 +132,23 @@ export default class S3Controller {
     const key: any = req.body?.key;
 
     if (!bucketName) {
-      res.send({
+      return res.send({
         error: 'Bucket name is required.',
       });
     } else if (!bucketRegion) {
-      res.send({
+      return res.send({
         error: 'Bucket region is required.',
       });
     } else if (!bucketAccessKeyId) {
-      res.send({
+      return res.send({
         error: 'Bucket access key ID is required.',
       });
     } else if (!bucketSecretAccessKey) {
-      res.send({
+      return res.send({
         error: 'Bucket secret access key is required.',
       });
     } else if (!key) {
-      res.send({
+      return res.send({
         error: 'Key is required.',
       });
     } else {
@@ -161,13 +161,13 @@ export default class S3Controller {
           key: key,
         });
 
-        res.send({
+        return res.send({
           statusCode: 200,
           key: key,
           message: `Successfully deleted the object.`,
         });
       } catch (error) {
-        res.send({
+        return res.send({
           statusCode: 500,
           error: `${error}`,
         });
