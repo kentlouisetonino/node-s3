@@ -2,7 +2,6 @@
   "name": "backend-nodejs-s3",
   "version": "1.0.0",
   "author": "Kent Louise Tonino",
-  "license": "MIT",
   "scripts": {
     "build": "tsc --build",
     "start": "tsc --build && node ./dist/server.js",
