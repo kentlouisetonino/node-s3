@@ -21,7 +21,7 @@
     "@types/prettier": "^2.7.0",
     "@types/superagent": "^4.1.18",
     "@types/supertest": "^2.0.12",
-    "aws-sdk": "^2.1414.0",
+    "aws-sdk": "^2.1415.0",
     "babel-cli": "^6.26.0",
     "babel-jest": "^29.6.1",
     "babel-preset-env": "^1.7.0",
