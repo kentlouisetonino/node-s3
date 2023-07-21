@@ -1,6 +1,5 @@
 ## Description
-> - A backend application that integrates with Amazon S3. The main technology stack used in this
-    project are AWS SDK, REST APIs, TypeScript, ExpressJS, and NodeJS.
+> - A backend application that integrates with Amazon S3. The main technology stack used in this project are AWS SDK, REST APIs, TypeScript, ExpressJS, Jest (Unit Testing) and NodeJS.
 
 <br />
 
