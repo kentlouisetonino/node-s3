@@ -1,4 +1,4 @@
-## Description
+## [ `Description` ]
 > - A backend application that integrates with Amazon S3. The main technology stack used in this project are AWS SDK, REST APIs, TypeScript, ExpressJS, Jest (Unit Testing) and NodeJS.
 
 <br />
@@ -9,16 +9,13 @@
 
 > - AWS SDK Page: https://www.npmjs.com/package/aws-sdk
 
-
-
 <br />
 <br />
 <br />
 
 
 
-## Setup
-
+## [ `Development` ]
 > - Run the following commands.
 
 ```bash
@@ -35,7 +32,9 @@ yarn test:all
 <br />
 <br />
 
-## API Endpoints
+
+
+## [ `API Endpoints` ]
 
 > - Upload a file.
 
