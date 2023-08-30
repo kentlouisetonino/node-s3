@@ -781,10 +781,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.2.tgz#129cc9ae69f93824f92fac653eebfb4812ab4af9"
   integrity sha512-Dd0BYtWgnWJKwO1jkmTrzofjK2QXXcai0dmtzvIBhcA+RsG5h8R3xlyta0kGOZRNfL9GuRtb1knmPEhQrePCEw==
 
-"@types/node@^20.5.6":
-  version "20.5.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.6.tgz#5e9aaa86be03a09decafd61b128d6cec64a5fe40"
-  integrity sha512-Gi5wRGPbbyOTX+4Y2iULQ27oUPrefaB0PxGQJnfyWN3kvEDGM3mIB5M/gQLmitZf7A9FmLeaqxD3L1CXpm3VKQ==
+"@types/node@^20.5.7":
+  version "20.5.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.7.tgz#4b8ecac87fbefbc92f431d09c30e176fc0a7c377"
+  integrity sha512-dP7f3LdZIysZnmvP3ANJYTSwg+wLLl8p7RqniVlV7j+oXSXAbt9h0WIBFmJy5inWZoX9wZN6eXx+YXd9Rh3RBA==
 
 "@types/nodemon@^1.19.2":
   version "1.19.2"
@@ -1039,10 +1039,10 @@ aws-sdk@*:
     uuid "8.0.0"
     xml2js "0.5.0"
 
-aws-sdk@^2.1445.0:
-  version "2.1445.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1445.0.tgz#02c4ab824b19b2716858fc5041a322e1951a68ea"
-  integrity sha512-/IYUYE79khfguHsb28fQtXKR/avgkhCa6NNOh6W84xEyc89hLTvF30VlvaYaHFlIQeDmylO9kJfjSqGrEVDPIg==
+aws-sdk@^2.1448.0:
+  version "2.1448.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1448.0.tgz#13d961afd7c4498d5b4af561118cd80eadee078d"
+  integrity sha512-15r8YKdAAXLgtPfQTAzD/qNxxgndF1SMEw6F+mXvLxZrLkG4BHnzOW2g2sQc3C2qG5yqCb3K6R+OrjbvGOAmdQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -4168,10 +4168,10 @@ prettier@*:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.0.tgz#e7b19f691245a21d618c68bc54dc06122f6105ae"
   integrity sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==
 
-prettier@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.2.tgz#78fcecd6d870551aa5547437cdae39d4701dca5b"
-  integrity sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==
+prettier@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.3.tgz#432a51f7ba422d1469096c0fdc28e235db8f9643"
+  integrity sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==
 
 pretty-format@^29.0.0, pretty-format@^29.6.1:
   version "29.6.1"
