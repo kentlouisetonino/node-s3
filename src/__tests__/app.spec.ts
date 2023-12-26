@@ -2,7 +2,7 @@ import request from 'supertest';
 import app from '../app';
 
 describe('[ src/App ]', () => {
-  // * If endpoint exist.
+  // If endpoint exist.
   test('a. It should response the status code 200 if endpoint exist.', (done) => {
     request(app)
       .get('/')
@@ -12,7 +12,7 @@ describe('[ src/App ]', () => {
       });
   });
 
-  // * If endpoint does not exist.
+  // If endpoint does not exist.
   test('b. It should response the status code 404 if endpoint does not exist.', (done) => {
     request(app)
       .get('/not-found')

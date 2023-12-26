@@ -6,18 +6,18 @@ import DefaultRoute from './routes/DefaultRoute';
 import S3Route from './routes/S3Route';
 import ExpressService from './services/ExpressService';
 
-// * Get the express application instance.
+// Get the express application instance.
 const app = ExpressService.app;
 
-// * App middlewares.
+// App middlewares.
 app.use(morgan('tiny'));
 app.use(express.static('public'));
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
-// * App other endpoints.
+// App other endpoints.
 app.use('/', DefaultRoute);
 app.use('/api/s3', S3Route);
 
-// * Separate app and server.
+// Separate app and server.
 export default app;

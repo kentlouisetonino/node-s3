@@ -1,5 +1,5 @@
 export enum ColorEnum {
-  // * Other config.
+  // Other config.
   Reset = '\x1b[0m',
   Bright = '\x1b[1m',
   Dim = '\x1b[2m',
@@ -8,7 +8,7 @@ export enum ColorEnum {
   Reverse = '\x1b[7m',
   Hidden = '\x1b[8m',
 
-  // * Font color.
+  // Font color.
   FgBlack = '\x1b[30m',
   FgRed = '\x1b[31m',
   FgGreen = '\x1b[32m',
@@ -19,7 +19,7 @@ export enum ColorEnum {
   FgWhite = '\x1b[37m',
   FgGray = '\x1b[90m',
 
-  // * Background color.
+  // Background color.
   BgBlack = '\x1b[40m',
   BgRed = '\x1b[41m',
   BgGreen = '\x1b[42m',

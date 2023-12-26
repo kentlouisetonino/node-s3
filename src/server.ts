@@ -3,7 +3,7 @@ import app from './app';
 import ColorService, { ColorEnum } from './services/ColorService';
 import EnvironmentService from './services/EnvironmentService';
 
-// * Server listener.
+// Server listener.
 app.listen(EnvironmentService.PORT, () => {
   const serverLogger = ColorService.logText(
     ColorEnum.FgCyan,
