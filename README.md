@@ -16,6 +16,16 @@
 
 
 ### [ `Development` ]
+> - Pushing the changes to all remote repository.
+
+```bash
+# Change mode the permission and make it executable.
+chmod +x git-push-all
+
+# Push all the changes to all remote repository.
+./git-push-all
+```
+
 > - Run the following commands.
 
 ```bash
