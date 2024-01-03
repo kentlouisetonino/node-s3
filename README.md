@@ -1,11 +1,10 @@
-### [ `Description` ]
-> - A backend application that integrates with Amazon S3. The main technology stack used in this project are AWS SDK, REST APIs, TypeScript, ExpressJS, Jest (Unit Testing) and NodeJS.
+## Description
+> - A backend application that integrates Node.js and Amazon S3.
 
-<br />
+> - The main technology stack used in this project are AWS SDK,
+    REST APIs, TypeScript, ExpressJS, Jest (Unit Testing) and NodeJS.
 
 > - Amazon S3 Page: https://aws.amazon.com/s3/
-
-<br />
 
 > - AWS SDK Page: https://www.npmjs.com/package/aws-sdk
 
@@ -15,7 +14,7 @@
 
 
 
-### [ `Development` ]
+## Local Development
 > - Pushing the changes to all remote repository.
 
 ```bash
@@ -44,7 +43,7 @@ yarn test:all
 
 
 
-### [ `API Endpoints` ]
+## API Endpoints
 
 > - Upload a file.
 
@@ -59,8 +58,6 @@ Body (form-data):
     file: File
 ```
 
-<br />
-
 > - Delete a file.
 
 ```plaintext
@@ -74,8 +71,6 @@ Body (form-data):
     key: string
 ```
 
-<br />
-
 > - Get the signed URL of the file.
 
 ```plaintext
@@ -88,3 +83,4 @@ Params:
     bucketSecretAccessKey: string
     key: string
 ```
+
