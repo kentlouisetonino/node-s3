@@ -1,4 +1,4 @@
-name: backend-nodejs-s3 (develop)
+name: node-s3 (develop)
 
 on:
   push:
