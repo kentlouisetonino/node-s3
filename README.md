@@ -1,4 +1,9 @@
 ## Description
+
+https://github.com/kentlouisetonino/node-s3/assets/69438999/9217014e-e91b-444f-b8c4-cb294d082274
+
+<br />
+
 > - A backend application that integrates Node.js and Amazon S3.
 
 > - The main technology stack used in this project are AWS SDK,
