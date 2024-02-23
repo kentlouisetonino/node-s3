@@ -35,4 +35,4 @@ yarn dev
 yarn test:all
 ```
 
-> - The documentation of APIs can be accessed on [postman](https://www.postman.com/kentlouisetonino/workspace/backend-engineering-portfolio/collection/21891196-8be4f057-168b-4515-89fd-e3367ca90bbb).
+> - The documentation of APIs can be accessed on [postman](https://www.postman.com/kentlouisetonino/workspace/backend-engineering/documentation/21891196-8be4f057-168b-4515-89fd-e3367ca90bbb).
