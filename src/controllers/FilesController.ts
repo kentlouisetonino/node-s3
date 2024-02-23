@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import S3Service from '../services/S3Service';
 
 export default class FilesController {
-  static async uploadFile(req: Request, res: Response) {
+  static async upload(req: Request, res: Response) {
     const bucketName = req.body?.bucketName;
     const bucketRegion = req.body?.bucketRegion;
     const bucketAccessKeyId = req.body?.bucketAccessKeyId;
@@ -64,7 +64,7 @@ export default class FilesController {
     }
   }
 
-  static async deleteFile(req: Request, res: Response) {
+  static async delete(req: Request, res: Response) {
     const bucketName = req.body?.bucketName;
     const bucketRegion = req.body?.bucketRegion;
     const bucketAccessKeyId = req.body?.bucketAccessKeyId;
@@ -115,7 +115,7 @@ export default class FilesController {
     }
   }
 
-  static async getSignedURL(req: Request, res: Response) {
+  static async url(req: Request, res: Response) {
     const bucketName = req.body?.bucketName;
     const bucketRegion = req.body?.bucketRegion;
     const bucketAccessKeyId = req.body?.bucketAccessKeyId;

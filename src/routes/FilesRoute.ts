@@ -8,8 +8,8 @@ const router = ExpressService.router;
 // Get the multer memory storage instance.
 const multer = MulterService.memoryStorage;
 
-router.post('/url', multer.fields([]), FilesController.getSignedURL);
-router.post('/upload', multer.single('file'), FilesController.uploadFile);
-router.post('/delete', multer.fields([]), FilesController.deleteFile);
+router.post('/url', multer.fields([]), FilesController.url);
+router.post('/upload', multer.single('file'), FilesController.upload);
+router.post('/delete', multer.fields([]), FilesController.delete);
 
 export default router;
