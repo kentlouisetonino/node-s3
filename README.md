@@ -38,7 +38,7 @@ yarn test:all
 
 ```plaintext
 HTTP Method: POST
-URL: http://localhost:11000/api/s3/upload
+URL: http://localhost:11000/api/files/upload
 Body (form-data):
     bucketName: string
     bucketRegion: string
@@ -51,7 +51,7 @@ Body (form-data):
 
 ```plaintext
 HTTP Method: POST
-URL: http://localhost:11000/api/s3/delete
+URL: http://localhost:11000/api/files/delete
 Body (form-data):
     bucketName: string
     bucketRegion: string
@@ -63,13 +63,12 @@ Body (form-data):
 > - Get the signed URL of the file.
 
 ```plaintext
-HTTP Method: GET
-URL: http://localhost:11000/api/s3/url
-Params:
+HTTP Method: POST
+URL: http://localhost:11000/api/files/url
+Params (form-data):
     bucketName: string
     bucketRegion: string
     bucketAccessKeyId: string
     bucketSecretAccessKey: string
     key: string
 ```
-
