@@ -35,48 +35,4 @@ yarn dev
 yarn test:all
 ```
 
-<br />
-<br />
-<br />
-
-
-
-## API Endpoints
-> - Upload a file.
-
-```plaintext
-HTTP Method: POST
-URL: http://localhost:11000/api/files/upload
-Body (form-data):
-    bucketName: string
-    bucketRegion: string
-    bucketAccessKeyId: string
-    bucketSecretAccessKey: string
-    file: File
-```
-
-> - Delete a file.
-
-```plaintext
-HTTP Method: POST
-URL: http://localhost:11000/api/files/delete
-Body (form-data):
-    bucketName: string
-    bucketRegion: string
-    bucketAccessKeyId: string
-    bucketSecretAccessKey: string
-    key: string
-```
-
-> - Get the signed URL of the file.
-
-```plaintext
-HTTP Method: POST
-URL: http://localhost:11000/api/files/url
-Params (form-data):
-    bucketName: string
-    bucketRegion: string
-    bucketAccessKeyId: string
-    bucketSecretAccessKey: string
-    key: string
-```
+> - The documentation of APIs can be accessed on [postman](https://www.postman.com/kentlouisetonino/workspace/backend-engineering-portfolio/collection/21891196-8be4f057-168b-4515-89fd-e3367ca90bbb).
