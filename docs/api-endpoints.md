@@ -68,12 +68,21 @@
 ### FILE URL
 
 ```plaintext
-Method : POST
-URL : http://localhost:11000/api/files/upload
-Form-Data :
-    bucketName : String
-    bucketRegion : String
-    bucketAccessKeyId : String
-    bucketSecretAccessKey : String
-    key : Text
+[REQUEST]
+    Method: POST
+    URL: http://localhost:11000/api/files/upload
+    Form-Data:
+        bucketName: Text
+        bucketRegion: Text
+        bucketAccessKeyId: Text
+        bucketSecretAccessKey: Text
+        key : Text
+
+[RESPONSE SUCCESS]
+    statusCode: number
+    url: string
+
+[RESPONSE FAILED]
+    statusCode: number
+    error: string
 ```

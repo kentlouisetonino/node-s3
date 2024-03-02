@@ -154,7 +154,7 @@ export default class FilesController {
 
         res.send({
           statusCode: 200,
-          key: s3ObjectURL,
+          url: s3ObjectURL,
         });
       } catch (error) {
         res.send({
