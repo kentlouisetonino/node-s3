@@ -40,14 +40,24 @@
 #
 
 ```plaintext
-Method : POST
-URL : http://localhost:11000/api/files/delete
-Form-Data :
-    bucketName : Text
-    bucketRegion : Text
-    bucketAccessKeyId : Text
-    bucketSecretAccessKey : Text
-    key : Text
+[REQUEST]
+    Method: POST
+    URL: http://localhost:11000/api/files/delete
+    Form-Data:
+        bucketName: Text
+        bucketRegion: Text
+        bucketAccessKeyId: Text
+        bucketSecretAccessKey: Text
+        key: Text
+
+[RESPONSE SUCCESS]
+    statusCode: number
+    key: string
+    message: string
+
+[RESPONSE FAILED]
+    statusCode: number
+    error: string
 ```
 
 <br />
