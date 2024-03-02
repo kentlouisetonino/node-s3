@@ -11,14 +11,24 @@
 #
 
 ```plaintext
-Method : POST
-URL : http://localhost:11000/api/files/upload
-Form-Data :
-    bucketName : Text
-    bucketRegion : Text
-    bucketAccessKeyId : Text
-    bucketSecretAccessKey : Text
-    file : File
+[REQUEST]
+    Method: POST
+    URL: http://localhost:11000/api/files/upload
+    Form-Data:
+        bucketName: Text
+        bucketRegion: Text
+        bucketAccessKeyId: Text
+        bucketSecretAccessKey: Text
+        file: File
+
+[RESPONSE SUCCESS]
+    statusCode: number
+    key: string
+    url: string
+
+[RESPONSE FAILED]
+    statusCode: number
+    error: string
 ```
 
 <br />
