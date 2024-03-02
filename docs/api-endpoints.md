@@ -1,11 +1,12 @@
-### /files/upload
+### FILE UPLOAD
 
 ```plaintext
-METHOD : POST
+Method : POST
 URL : http://localhost:11000/api/files/upload
-FORM-DATA
-    bucketName : {{bucketName}}
-    bucketRegion : {{bucketRegion}}
-    bucketAccessKeyId : {{bucketAccessKeyId}}
-    bucketSecretAccessKey : {{bucketSecretAccessKey}}
+Form Data :
+    bucketName : String
+    bucketRegion : String
+    bucketAccessKeyId : String
+    bucketSecretAccessKey : String
+    file : File
 ```
