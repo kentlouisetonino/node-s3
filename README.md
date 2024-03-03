@@ -29,4 +29,4 @@ yarn dev
 yarn test:all
 ```
 
-> - API Documentation | [``View``](https://github.com/kentlouisetonino/node-s3/blob/develop/docs/files-api-endpoints.md)
+> - API Documentation | [``View``](https://github.com/kentlouisetonino/node-s3/blob/develop/docs/api-endpoints-files.md)
